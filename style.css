@@ -1,0 +1,308 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Varela Round', sans-serif;  
+}
+/* ==========header============ */
+#header{
+    height: 100vh;
+    background: linear-gradient(rgba(63, 108, 143,0.5),rgba(63, 108, 143,.6)),url(images/background.jpeg);
+    background-position: center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+.userbox{
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    position: absolute;
+    text-align: center;
+}
+.userbox img{
+    border-radius: 40%;
+    width: 250px;
+    border: solid 2px rgb(235, 240, 245);
+}
+.userbox h1{
+    color:white;
+    font-weight: bold;
+    margin:10px;
+}
+.userbox p{
+    color: white;
+    font-weight: bold;
+}
+.scroll-btn{
+    position:absolute;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 30px;
+    top:90%;
+    right: 50%;
+}
+.scroll-bar span{
+    border:4px solid gray;
+    font-size: 20px;
+    border-radius:30px;
+}
+.scroll-bar {
+    animation: mover 2s infinite alternate;
+}
+@keyframes mover{
+    0%{transform:translateY(-8px);}
+    100%{transform:translateY(8px);}
+}
+/* -------------USERINFO---------- */
+.user-info .navbar-nav{
+    list-style: none;
+    display: inline-block;
+    transform: translateX(125%);
+    
+    
+}
+.user-info .navbar-nav li{
+    padding-right:30px;
+    padding-top: 15px;  
+
+}
+/* ================about========== */
+.about{
+    padding: 100px 0 80px 0;
+    margin-bottom: -100px;
+}
+.profile-img{
+    height: 400px;
+}
+.nav-bar{
+    top: 0;
+    /* position: sticky; */
+}
+.navbar{
+    background-color: rgb(250, 164, 164);
+}
+.navbar-brand img{
+    height: 50px;
+    transform: translateY(-30%);
+}
+.skill-bar P{
+    margin-bottom: 6px;
+}
+.progress{
+    border-radius: 16px  !important;
+    margin-bottom:10px;
+}
+.progress-bar{
+    border-radius: 16px;
+    background-color:rgb(236, 154, 96) !important;
+}
+
+/* ----------------resuem----------------- */
+.resume{
+    padding-top:50px;
+    padding-bottom:30px;
+    background:cornflowerblue;
+    width: 100%;
+    margin-top:-100px;
+
+}
+.resume h2{
+    margin-bottom:50px;
+    text-align: center;
+}
+.timeline{
+    list-style: none;
+    position: relative;
+}
+.timeline::before{
+    content: "";
+    background: rgb(250, 233, 3);
+    display:inline-block;
+    height: 100%;
+    position:absolute;
+    width:3px;
+    left:-10px;
+    z-index: 1;
+}
+.timeline li{
+    padding: 20px 0 20px 20px;
+    background: rgb(172, 194, 129);
+}
+.timeline li h3{
+    background: white;
+}
+.timeline li h3 span{
+    font-weight: bold;
+    color:rgb(10, 62, 131)
+}
+.timeline li span::before{
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    border: solid 3px rgb(250, 233, 3);
+    display: inline-block;
+    width:20px;
+    left: -19px;
+    height: 20px;
+    z-index: 1;
+}
+/* ==============projects============= */
+.projects{
+    padding-top: 30px;
+    background: linear-gradient( rgba(168, 201, 227,.8),rgba(168, 201, 227,.8)),url(images/project.jpg);
+    height: 100vh;
+    width:100%;
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+}
+.projects .text-center{
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom:20px;
+    color: rgb(4, 51, 206);
+}
+.projects .details{
+    padding-bottom: 20px;
+    text-align: center;
+    margin:50px;
+    border: solid 3px rgba(63, 108, 143,.6);
+    background:rgba(67, 142, 228, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    width:auto;
+    
+}
+.projects .details:hover{
+    box-shadow: 0 0 30px 0 royalblue;
+    transition: .5s;
+}
+.projects .details h2{
+    font-weight: bold;
+    color: rgb(3, 3, 5);
+}
+.projects .details p{
+    font-weight: bold;
+    color:rgb(40, 92, 6)
+
+}
+/* ============implant training================= */
+
+.inplant-training{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(232, 189, 186,.5),rgba(232, 189, 186,.5)),url(images/intership.jpeg);
+    text-align: center;
+    /* margin-top: 20px; */
+    margin-bottom: -200px;
+}
+.inplant-training .text-center{
+    font-weight: bold;
+    border:3px solid rgb(26, 101, 185);
+    background:transparent;
+    border-radius: 10px;
+    display:inline-block;
+    color:royalblue;
+    transition: 1s;
+    margin-bottom: 50px;
+    margin-top: 100px;
+} 
+.inplant-training .text-center:hover{
+    box-shadow: 0 0 20px 0 cornflowerblue;
+
+}
+.inplant-training  .row{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+.inplant-training .row .col-md-4{
+    flex-basis:49%;
+
+}
+.inplant-training .row .col-md-4 .inplant-box{
+    padding:20px ;
+    border: solid 3px silver;
+    border-radius:10px;
+    box-sizing: border-box;
+    background:rgba(232, 189, 186,.5);
+    text-align: center;
+    list-style: none;
+}
+.inplant-training .row .col-md-4 .inplant-box li{
+    font-size: 16px;
+    padding-bottom: 10px;
+
+}
+.inplant-training .row .col-md-4 .inplant-box:hover{
+           box-shadow: 0 0 30px 0 rgba(0, 92, 0, 0.5);
+           transition: 1s;
+}
+/* ------------contact=----------------- */
+.contact{
+    padding-top: 100px;
+    background: linear-gradient(rgba(63, 108, 143,0.5),rgba(63, 108, 143,.6)),url(images/contact\ me\ background.jpg);
+    background-position: center;
+    background-size:cover;
+    background-attachment:fixed;
+    color:white;
+    margin-top: -150px;
+}
+.contact .text-center{
+    font-size:larger;
+}
+.contact .row{
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+.contact .col-md-4 .fa{
+    padding: 10px;
+    font-size: 40px;
+}
+.contact .btn{
+    padding: 10px 25px;
+    margin:5px;
+    border-radius: 30px;
+    border:2px solid rgb(250, 233, 3);
+    background: transparent;
+}
+.contact .btn:hover{
+    box-shadow:0 0 30px 0 rgb(26, 101, 185);
+    transition: 1s;
+}
+.contact .btn .fab{
+    margin-right:10px;
+}
+.footer{
+    background: black;
+    height: 50px;
+    margin-top:50px ;
+    color: white;
+    padding-top: 20px;
+    width:100%;
+    font-size: 1.5em;
+}
+/* ------------social icons----------------- */
+.social-icons{
+    top:50%;
+    transform: translateY(-50%);
+    width: 80px;
+    position: sticky;
+}
+.social-icons li{
+    height: 40px;
+    width: 40px;
+    list-style: none;
+    margin-top:5px;
+    padding: 12px 0px 0 12px;
+    background: black;
+    color:white;
+
+}
+.social-icons li:hover{
+    padding-left: 30px;
+    width:80px;
+    transition: 1s;
+}
